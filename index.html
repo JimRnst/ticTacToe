@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wins-display">
+        <div id="winning-message">WINS</div>
+        <div id="box-btn">
+            <button id="new-game" class="btn-game">New Game</button>
+            <button id="reset" class="btn-game">Reset Game</button>
+        </div>
+        <div id="overflow"></div>
+    </div>
+    <div id="contain">
+        <main>
+            <div class="game-board">
+                <div class="box" id="0"></div>
+                <div class="box" id="1"></div>
+                <div class="box" id="2"></div>
+                <div class="box" id="3"></div>
+                <div class="box" id="4"></div>
+                <div class="box" id="5"></div>
+                <div class="box" id="6"></div>
+                <div class="box" id="7"></div>
+                <div class="box" id="8"></div>
+              </div>
+              <div>
+                <div id="turn-message"></div>
+                <div id="table">
+                    <div id="table-score">Score</div>
+                    <div id="table-player-ia">
+                        <div class="box-score">
+                            <div class="box-title">X</div>
+                            <div class="score" id="score-player-one">0</div>
+                        </div>
+                        <div class="box-score">
+                            <div class="box-title">O</div>
+                            <div class="score" id="score-player-two">0</div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
