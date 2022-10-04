@@ -59,7 +59,9 @@ const letsPlay = (function(){
 
     function endGame(draw){
         if(draw){
-            turnMessage.innerText = 'Draw!';
+            winningMessage.innerText = 'Draw!';
+            showWinner.classList.add("show")
+            turnMessage.innerText = ""
         } else{
             winningMessage.innerText = `${circleTurn ? "O's" : "X's"} Wins!`;
             if(circleTurn === false){
